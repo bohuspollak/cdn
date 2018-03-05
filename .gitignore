@@ -1,1 +1,5 @@
 .idea
+cmake-build-debug
+
+# Temporarily removed agent until it can be decided upon
+edge/agent

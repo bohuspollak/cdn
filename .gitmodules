@@ -1,0 +1,6 @@
+[submodule "edge/docker/nginx/root/usr/local/openresty/site/lualib/lib/resty-http-simple"]
+	path = edge/docker/nginx/root/usr/local/openresty/site/lualib/lib/resty-http-simple
+	url = https://github.com/agentzh/lua-resty-http-simple.git
+[submodule "edge/docker/nginx/root/usr/local/openresty/site/lualib/lib/resty-http"]
+	path = edge/docker/nginx/root/usr/local/openresty/site/lualib/lib/resty-http
+	url = https://github.com/liseen/lua-resty-http.git
