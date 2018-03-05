@@ -1,0 +1,26 @@
+version: '3.4'
+services:
+  nginx:
+    container_name: nginx
+    build:
+      context: ./docker/nginx
+    networks:
+      - cdn-edge
+    volumes:
+      - type: bind
+        source: /srv/www
+        target: /srv/www
+      - type: bind
+        source: /srv/ssl
+        target: /srv/ssl
+      - type: bind
+        source: /srv/log
+        target: /srv/log
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: unless-stopped
+networks:
+  cdn-edge:
+    driver: bridge
+    attachable: true
